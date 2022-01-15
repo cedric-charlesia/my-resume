@@ -1,0 +1,100 @@
+/* General settings */
+
+:root {
+  --darkblue-color: #023E7D;
+  --lightblue-color: #5FA8D3;
+  /* Text color */
+  --text-color: #000;
+  --header-size: 1rem;
+  --title-size: 0.9rem;
+  --text-size: 0.7rem;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--text-size);
+}
+.darkblue {
+  color: var(--darkblue-color);
+}
+.lightblue {
+  color: var(--lightblue-color);
+}
+.separator {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Main container Layout */
+.container {
+  width: 210mm;
+  height: 297mm;
+  margin: auto;
+  padding: 2.5mm;
+  position: relative;
+  display: grid;
+  grid-template-rows: 15% 80% 5%;
+  grid-template-columns: 20% 80%;
+  border: 1px solid black;
+}
+
+/* Header section */
+.header {
+  grid-area: 1 / 1 / 2 / -1;
+}
+
+.introduction {
+  display: flex;
+  gap: 1rem;
+}
+
+.picture {
+  width: 20%;
+  background-image: url(/img/cedric.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+}
+.title {
+  width: 80%;
+}
+.contact_links {
+  display: flex;
+  justify-content: space-around;
+}
+.contact_links a,
+.contact_links a:hover,
+.contact_links a:active,
+.contact_links a:visited {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Main section */
+.main {
+  grid-area: 2 / 1 / 3 / -1;
+  display: flex;
+  gap: 2rem;
+}
+.about_me {
+  width: 25%;
+}
+.experience {
+  width: 75%;
+}
+.personal_project {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Footer section */
+.footer {
+  grid-area: 3 / 1 / -1 / -1;
+  background-color: var(--lightblue-color);
+}
