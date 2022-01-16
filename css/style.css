@@ -7,14 +7,14 @@
   --text-color: #000;
   --header-title-size: 1.5rem;
   --name-size: 1.3rem;
-  --cv-title-size: 1.2rem;
+  --cv-title-size: 1.25rem;
   --text-size: 0.91rem;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: var(--text-size);
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 .darkblue {
   color: var(--darkblue-color);
@@ -24,7 +24,7 @@ body {
 }
 .separator {
   margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .bold {
   font-weight: bold;
@@ -35,6 +35,13 @@ body {
 ul {
   list-style: none;
   padding-left: 0;
+}
+.fa-code,
+.fa-graduation-cap,
+.fa-thumbs-up,
+.fa-laptop,
+.fa-briefcase {
+  margin-right: 0.25rem;
 }
 
 /* Main container Layout */
@@ -47,8 +54,7 @@ ul {
   display: grid;
   grid-template-rows: 15% 82% 3%;
   grid-template-columns: 20% 80%;
-  background-color: #fff;
-  /* border: 1px solid black; */
+  /* background-color: #fff; */
 }
 
 /* Header section */
