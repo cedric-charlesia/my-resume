@@ -29,6 +29,9 @@ body {
 .bold {
   font-weight: bold;
 }
+.italic {
+  font-style: italic;
+}
 ul {
   list-style: none;
   padding-left: 0;
@@ -123,15 +126,41 @@ ul {
   border-right: 4px solid var(--darkblue-color);
 }
 
-/* Main section - skill sub section */
+/* Main section - skills sub section */
 .skill-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 85%;
 }
 
+/* Main section - education sub section */
+.education {
+  padding: 0.35rem;
+  background-color: #B7CFDC;
+  border-radius: 0.15rem;
+}
+.education ul {
+  list-style: square;
+  padding-left: 1.5rem;
+  line-height: 1.3;
+}
+
+/* Main section - favorites sub section */
+.favorites {
+  list-style: square;
+  padding-left: 1.5rem;
+  line-height: 1.3;
+}
+.favorites a,
+.favorites a:hover,
+.favorites a:active,
+.favorites a:visited {
+  text-decoration: none;
+  color: var(--darkblue-color);
+}
+
 /* Main section - experiences and projects sub section */
-.experience {
+.experiences-block {
   width: 66%;
   padding-left: 1rem;
   padding-right: 0.5rem;
@@ -157,12 +186,25 @@ ul {
   text-align: right;
   margin-right: 1rem;
 }
+.experience-list {
+  list-style: square;
+  padding-left: 1.5rem;
+  line-height: 1.3;
+}
 
 /* Past experiences */
 .past-experience {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+.past-experience ul {
+  list-style: square;
+  padding-left: 1.5rem;
+  line-height: 1.3;
+}
+.no-margin-bottom {
+  margin-bottom: 0;
 }
 
 /* Footer section */
