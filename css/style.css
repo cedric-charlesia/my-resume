@@ -8,6 +8,7 @@
   --header-title-size: 1.5rem;
   --name-size: 1.3rem;
   --cv-title-size: 1.25rem;
+  --cv-goal-size: 1rem;
   --text-size: 0.91rem;
 }
 
@@ -83,17 +84,25 @@ ul {
 }
 .my_name {
   font-size: var(--name-size);
-  margin: 0.5rem;
+  margin: 0.25rem;
 }
 .job_title {
   font-size: var(--header-title-size);
-  margin: 0.5rem;
+  margin: 0.25rem;
 }
 .my_details {
-  margin: 0.5rem;
+  margin: 0.25rem;
 }
-.my_address {
+.my_project {
+  align-self: center;
   margin: 0.5rem;
+  color: var(--darkblue-color);
+  font-size: var(--cv-goal-size);
+  font-weight: bold;
+  padding: 0.35rem;
+  background-color: #B7CFDC;
+  border-radius: 0.15rem;
+  width: 65%;
 }
 .contact_links {
   display: flex;
@@ -152,7 +161,8 @@ ul {
 }
 
 /* Main section - favorites sub section */
-.favorites {
+.favorites,
+.new_skills {
   list-style: square;
   padding-left: 1.5rem;
   line-height: 1.3;
