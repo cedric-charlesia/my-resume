@@ -32,6 +32,7 @@ body {
 }
 .italic {
   font-style: italic;
+  display: block;
 }
 ul {
   list-style: none;
@@ -120,6 +121,9 @@ ul {
   text-decoration: none;
   color: var(--text-color);
 }
+.link_underline {
+  text-decoration: underline;
+}
 
 /* Main section */
 .main {
@@ -171,7 +175,7 @@ ul {
 .favorites a:hover,
 .favorites a:active,
 .favorites a:visited {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: var(--darkblue-color);
 }
 
@@ -193,7 +197,7 @@ ul {
   border-radius: 0.15rem;
 }
 .project a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: var(--darkblue-color);
   font-weight: bold;
 }
@@ -211,9 +215,9 @@ ul {
 /* Past experiences */
 .past-experience {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 0.5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 0.5rem;
 }
 .past-experience ul {
   list-style: square;
